@@ -68,8 +68,10 @@ component.destroy // remove component and clean up reference onunload
  ```
 
 ## 8. Module Pattern extended
+
+[![Reference:]( http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/ )
+
  ```javascript
-// http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/
 	
 var myScript = function(){
   var pub = {};
@@ -348,14 +350,16 @@ prints:
  ```
 
 ## 25. Add in Memoization example
- ```javascript
 
-// reference: http://unscriptable.com/2009/05/01/a-better-javascript-memoizer/
+[![reference:]( http://unscriptable.com/2009/05/01/a-better-javascript-memoizer/ )
 
-// reference: http://philogb.github.io/blog/2008/09/05/memoization-in-javascript/
- ```
+[![reference:]( http://philogb.github.io/blog/2008/09/05/memoization-in-javascript/ )
+ 
 
-## 26. Inheritance ( https://developer.mozilla.org/en/Introduction_to_Object-Oriented_JavaScript )
+## 26. Inheritance
+
+[![Reference]( https://developer.mozilla.org/en/Introduction_to_Object-Oriented_JavaScript )
+
  ```javascript
 
 // define the Person Class  
@@ -402,9 +406,10 @@ alert(student1 instanceof Student); // true
  ```
 
 ## 27. Performant Strings
- ```javascript
 
-// Reference: http://dev.opera.com/articles/view/efficient-javascript/?page=1
+[![Reference:]( http://dev.opera.com/articles/view/efficient-javascript/?page=1 )
+
+ ```javascript
 
 // This example requires the script engine to create 21 new string objects, once for each time the length property is accessed, and once each time the charAt method is called:
 var s = '0123456789';
@@ -496,6 +501,9 @@ var tmpl = ''.concat(
  ```
 
 ## 35. Quick indexOf in an Array
+
+[![Reference:]( http://www.javascriptturnsmeon.com/the-tilde-operator-in-javascript/ )
+
  ```javascript
 
 var foo = [1, 2, 3, 4, 5];
@@ -504,7 +512,6 @@ if (!!~a.indexOf(5)) { //!! is used to reverse the boolean value to a positive
 	console.log("found five");
 }
 
-// Reference: http://www.javascriptturnsmeon.com/the-tilde-operator-in-javascript/
  ```
 
 ## 36. Get a property from an Object (utilities)
