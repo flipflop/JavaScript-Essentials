@@ -6,12 +6,12 @@ mynamespace.component = function() {
 };
  ```
 
-## 2. get a class name from multiples
+## 2. Get a Class Name from Multiples
  ```javascript
 $("#content").attr("class").split(" ")[0];
  ```
 
-## 3. argument defaulting
+## 3. Argument Defaulting
  ```javascript
 drawLines : function(lineheight) {
 	lineheight = lineheight || "12px"; //default
@@ -19,14 +19,14 @@ drawLines : function(lineheight) {
 }
  ```
 
-## 4. toggle display
+## 4. Toggle Display
  ```javascript
 function toggle(obj) {
 	obj.style.display = obj.style.display == "none" ? "" : "none";		
 }
  ```
 
-## 5. cross browser event reduction 
+## 5. Cross Browser Event Reduction 
  ```javascript
 document.onkeydown = function(e) {
 		//return the right event	
@@ -67,9 +67,9 @@ component.destroy // remove component and clean up reference onunload
 })();
  ```
 
-## 8. Module Pattern extended
+## 8. Module Pattern Extended
 
-[![Reference:]( http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/ )
+[Reference:]( http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/ )
 
  ```javascript
 	
@@ -90,7 +90,7 @@ var myScript = function(){
 myScript.init();
  ```
 
-## 9. Hash table methods or handy NVP data storage
+## 9. Hash Table Methods or Handy NVP Data Storage
  ```javascript
 var person = {
 	drinkBeer : function() {
@@ -120,7 +120,7 @@ var methodCall = "drinkBeer";
 person[methodCall]();
  ```
 
-## 10. Quick 'n' dirty arrayContains
+## 10. Quick 'n' Dirty ArrayContains
  ```javascript
 alert( ['where','are','my', 'keys'].indexOf("keys") != -1 );
 
@@ -180,8 +180,10 @@ jQuery.noConflict()
 })( window.mynamespace || (window.mynamespace = {}), jQuery, document ); //end mynamespace.ModuleName (create namespace and context)
  ```
 
-## 13. Multi line alternative to String concatenation
+## 13. Multi Line Alternative to String Concatenation
  ```javascript
+
+// careful using this with some build tools 
 
 var myString = 	"some really long text repeated\n\
 			 	some really long text repeated\n\
@@ -197,7 +199,7 @@ for(i=itemsLen; i--;)  { // looping backwards is faster
 }
  ```
 
-## 15. Closure to encapsulate lost scope
+## 15. Closure to Encapsulate Lost Scope
  ```javascript
 
 var listElements = document.getElementsByTagName("li");
@@ -211,7 +213,7 @@ for(var i=0; i < listElements.length; i++) {
 }
  ```
 
-## 16. Property checking
+## 16. Property Checking
  ```javascript
 
 if ( foo == "bar" || foo == "foobar" || foo == "foo" ) {
@@ -224,7 +226,7 @@ if ( foo in { bar:1, foobar:1, foo:1 } ) {
 }
  ```
 
-## 17. jQuery selector caching
+## 17. jQuery Selector Caching
  ```javascript
 
 var foo = $(".item").bind("click", function(){
@@ -257,7 +259,7 @@ null
 */
  ```
 
-## 19.  Append an array to another array
+## 19.  Append an Array to Another Array
  ```javascript
 
 var a = [4,5,6];
@@ -267,7 +269,7 @@ Array.prototype.push.apply(a, b);
 console.log(a); // is: [4, 5, 6, 7, 8, 9]
  ```
 
-## 20. Order an Array and get highest or lowest number
+## 20. Order an Array and Get Highest or Lowest
  ```javascript
 var list = [5,1,7,2,9,4,6,3,8],
 	lowestNumber,
@@ -351,14 +353,14 @@ prints:
 
 ## 25. Add in Memoization example
 
-[![reference:]( http://unscriptable.com/2009/05/01/a-better-javascript-memoizer/ )
+[Reference:]( http://unscriptable.com/2009/05/01/a-better-javascript-memoizer/ )
 
-[![reference:]( http://philogb.github.io/blog/2008/09/05/memoization-in-javascript/ )
+[Reference:]( http://philogb.github.io/blog/2008/09/05/memoization-in-javascript/ )
  
 
 ## 26. Inheritance
 
-[![Reference]( https://developer.mozilla.org/en/Introduction_to_Object-Oriented_JavaScript )
+[Reference]( https://developer.mozilla.org/en/Introduction_to_Object-Oriented_JavaScript )
 
  ```javascript
 
@@ -407,7 +409,7 @@ alert(student1 instanceof Student); // true
 
 ## 27. Performant Strings
 
-[![Reference:]( http://dev.opera.com/articles/view/efficient-javascript/?page=1 )
+[Reference:]( http://dev.opera.com/articles/view/efficient-javascript/?page=1 )
 
  ```javascript
 
@@ -502,7 +504,7 @@ var tmpl = ''.concat(
 
 ## 35. Quick indexOf in an Array
 
-[![Reference:]( http://www.javascriptturnsmeon.com/the-tilde-operator-in-javascript/ )
+[Reference:]( http://www.javascriptturnsmeon.com/the-tilde-operator-in-javascript/ )
 
  ```javascript
 
