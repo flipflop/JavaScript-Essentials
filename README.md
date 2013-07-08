@@ -1,7 +1,7 @@
 ## 1. JS Namespacing
  ```javascript
 if (typeof mynamespace != "object") { var mynamespace = {}; }
-  mynamespace.component = function() { 
+	mynamespace.component = function() { 
 		// component safely nestled within a namespace  
 	};
  ```
@@ -38,13 +38,13 @@ document.onkeydown = function(e) {
 
 ## 6. Code convention for Web page widget interfaces
  ```javascript	
-	// the typical anatomy of a component component.init( config ) 
-	// initialisation - accepts JSON for configuration options	
-	
-	component.init // intialisation (optional self invoking), can be used pass through, unload, onDomReady or arbitrarily 
-	component.addEvents // event handling
-	component.display // display 
-	component.destroy // remove component and clean up reference onunload
+// the typical anatomy of a component component.init( config ) 
+// initialisation - accepts JSON for configuration options	
+
+component.init // intialisation (optional self invoking), can be used pass through, unload, onDomReady or arbitrarily 
+component.addEvents // event handling
+component.display // display 
+component.destroy // remove component and clean up reference onunload
  ```
 
 ## 7. Annonymous function
@@ -140,7 +140,7 @@ console.log( arr.indexOf('bar') ); // prints: 1
 var stuckTogether = ["value1", "value2", "value3"].join("");
  ```
 
-## 12. Advanced Module pattern (public and private members within a namespace)
+## 12. Module pattern (public and private members within a namespace)
  ```javascript
 
 jQuery.noConflict()
@@ -182,8 +182,8 @@ jQuery.noConflict()
  ```javascript
 
 var myString = 	"some really long text repeated\n\
-			 some really long text repeated\n\
-			some really long text repeated";
+			 	some really long text repeated\n\
+				some really long text repeated";
  ```
 ## 14. Faster Loops
  ```javascript
@@ -287,9 +287,9 @@ console.log(list); // prints something like: 4,3,1,2,9,5,6,7,8
  ```javascript
 // raised when a syntax error occurs while parsing code in eval()
 try {
-  eval('1 + * 5'); // will rise a SyntaxError exception
+	eval('1 + * 5'); // will rise a SyntaxError exception
 } catch( ex ) {
-  console.log( ex.constructor == SyntaxError ); // Prints true
+	console.log( ex.constructor == SyntaxError ); // Prints true
 }
 
 // JavaScript 1.7
@@ -358,47 +358,47 @@ prints:
 ## 26. Inheritance ( https://developer.mozilla.org/en/Introduction_to_Object-Oriented_JavaScript )
  ```javascript
 
-	// define the Person Class  
-	function Person() {}  
+// define the Person Class  
+function Person() {}  
 
-	Person.prototype.walk = function(){  
-	  alert ('I am walking!');  
-	};  
+Person.prototype.walk = function(){  
+  alert ('I am walking!');  
+};  
 
-	Person.prototype.sayHello = function(){  
-	  alert ('hello');  
-	};  
+Person.prototype.sayHello = function(){  
+  alert ('hello');  
+};  
 
-	// define the Student class  
-	function Student() {  
-	  // Call the parent constructor  
-	  Person.call(this);  
-	}  
+// define the Student class  
+function Student() {  
+  // Call the parent constructor  
+  Person.call(this);  
+}  
 
-	// inherit Person  
-	Student.prototype = new Person();  
+// inherit Person  
+Student.prototype = new Person();  
 
-	// correct the constructor pointer because it points to Person  
-	Student.prototype.constructor = Student;  
+// correct the constructor pointer because it points to Person  
+Student.prototype.constructor = Student;  
 
-	// replace the sayHello method  
-	Student.prototype.sayHello = function(){  
-	  alert('hi, I am a student');  
-	}  
+// replace the sayHello method  
+Student.prototype.sayHello = function(){  
+  alert('hi, I am a student');  
+}  
 
-	// add sayGoodBye method  
-	Student.prototype.sayGoodBye = function(){  
-	  alert('goodBye');  
-	}  
+// add sayGoodBye method  
+Student.prototype.sayGoodBye = function(){  
+  alert('goodBye');  
+}  
 
-	var student1 = new Student();  
-	student1.sayHello();  
-	student1.walk();  
-	student1.sayGoodBye();  
+var student1 = new Student();  
+student1.sayHello();  
+student1.walk();  
+student1.sayGoodBye();  
 
-	// check inheritance  
-	alert(student1 instanceof Person); // true   
-	alert(student1 instanceof Student); // true
+// check inheritance  
+alert(student1 instanceof Person); // true   
+alert(student1 instanceof Student); // true
  ```
 
 ## 27. Performant Strings
