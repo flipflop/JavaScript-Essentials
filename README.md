@@ -1,9 +1,9 @@
 ## 1. JS Namespacing
  ```javascript
 if (typeof mynamespace != "object") { var mynamespace = {}; }
-	mynamespace.component = function() { 
-		// component safely nestled within a namespace  
-	};
+mynamespace.component = function() { 
+	// component safely nestled within a namespace  
+};
  ```
 
 ## 2. get a class name from multiples
@@ -36,7 +36,7 @@ document.onkeydown = function(e) {
 }
  ```
 
-## 6. Code convention for Web page widget interfaces
+## 6. Code Convention for Module Pattern Component
  ```javascript	
 // the typical anatomy of a component component.init( config ) 
 // initialisation - accepts JSON for configuration options	
@@ -47,7 +47,7 @@ component.display // display
 component.destroy // remove component and clean up reference onunload
  ```
 
-## 7. Annonymous function
+## 7. Annonymous Immediately Invoking Function (IFF)
  ```javascript
 // avoid global scope
 // create a new annonymous function, to use as a wrapper
@@ -67,7 +67,7 @@ component.destroy // remove component and clean up reference onunload
 })();
  ```
 
-## 8. Module pattern extended
+## 8. Module Pattern extended
  ```javascript
 // http://www.wait-till-i.com/2007/07/24/show-love-to-the-module-pattern/
 	
@@ -88,7 +88,7 @@ var myScript = function(){
 myScript.init();
  ```
 
-## 9. hash table methods or handy NVP data storage
+## 9. Hash table methods or handy NVP data storage
  ```javascript
 var person = {
 	drinkBeer : function() {
@@ -118,7 +118,7 @@ var methodCall = "drinkBeer";
 person[methodCall]();
  ```
 
-## 10. quick 'n' dirty arrayContains
+## 10. Quick 'n' dirty arrayContains
  ```javascript
 alert( ['where','are','my', 'keys'].indexOf("keys") != -1 );
 
@@ -140,7 +140,7 @@ console.log( arr.indexOf('bar') ); // prints: 1
 var stuckTogether = ["value1", "value2", "value3"].join("");
  ```
 
-## 12. Module pattern (public and private members within a namespace)
+## 12. Module Pattern (public and private members within a namespace)
  ```javascript
 
 jQuery.noConflict()
@@ -175,7 +175,7 @@ jQuery.noConflict()
 	// Public API (assigns to my namespace)
 	container.ModuleName = createModule();
 
-})( this.mynamespace || (this.mynamespace = {}), jQuery, document ); //end mynamespace.ModuleName (create namespace and context)
+})( window.mynamespace || (window.mynamespace = {}), jQuery, document ); //end mynamespace.ModuleName (create namespace and context)
  ```
 
 ## 13. Multi line alternative to String concatenation
