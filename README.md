@@ -29,10 +29,10 @@ function toggle(obj) {
 ## 5. Cross Browser Event Reduction 
  ```javascript
 document.onkeydown = function(e) {
-		//return the right event	
-		e = e || window.event;	
-		//get keycode
-		var keyCode = e.keyCode || e.which;
+	//return the right event	
+	e = e || window.event;	
+	//get keycode
+	var keyCode = e.keyCode || e.which;
 }
  ```
 
@@ -489,7 +489,7 @@ if (history.pushState) {
 ## 33. Convert to an Integer (instead of Math.floor) - possibly a faster alternative
  ```javascript
 
-~~((image.width / image.height)
+~~((image.width / image.height))
  ```
 
 ## 34. JavaScript Templates (also executes quickly - easy to read)
