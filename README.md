@@ -299,11 +299,12 @@ try {
 // JavaScript 1.7
 try {
 
- eval('1 + * 5');
+	eval('1 + * 5');
 
 } catch( ex if ex instanceof SyntaxError ) {
+	
+	console.log( 'SyntaxError !' ); // prints: SyntaxError !
 
- console.log( 'SyntaxError !' ); // prints: SyntaxError !
 }
  ```
 
