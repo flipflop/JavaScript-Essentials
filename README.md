@@ -206,7 +206,7 @@ var listElements = document.getElementsByTagName("li");
 
 for(var i=0; i < listElements.length; i++) {
     (function(inc) {
-      listElements[inc].onclick = function() {
+      listElements[inc].onclick = function() {
 		alert(inc);
     };
   }(i));
