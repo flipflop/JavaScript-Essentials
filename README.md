@@ -301,7 +301,7 @@ try {
 
  eval('1 + * 5');
 
-} catch( ex if ex instanceof SyntaxError  ) {
+} catch( ex if ex instanceof SyntaxError ) {
 
  console.log( 'SyntaxError !' ); // prints: SyntaxError !
 }
@@ -426,7 +426,7 @@ for( var i = 0; i < s.length; i++ ) {
 }
  ```
 
-// 28. Padding a string (without code branching)
+## 28. Padding a string (without code branching)
  ```javascript
 
 ('00' + 3).slice(-3)
