@@ -542,3 +542,9 @@ console.log(get('oranges')(inventory));
 console.log(splat(get('oranges'))(inventories));
  ```
 
+## 37. Reverse a string
+ ```javascript
+function reverse(s) {
+    return s.split("").reverse().join("");
+}
+ ```
