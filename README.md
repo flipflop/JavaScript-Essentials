@@ -548,3 +548,16 @@ function reverse(s) {
     return s.split("").reverse().join("");
 }
  ```
+ 
+## 38. JavaScript Truncation Operator
+ ```
+3.1|0 == 3
+
+3.9|0 == 3
+
+-10.9|0 == 10
+ ```
+ 
+ 
+ 
+
