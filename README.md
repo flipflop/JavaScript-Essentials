@@ -558,6 +558,12 @@ function reverse(s) {
 -10.9|0 == 10
  ```
  
+## 39. Quick charAt in String
+ ```
+"foo"[2]
+// returns "o"
+ ```
+ 
  
  
 
