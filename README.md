@@ -139,7 +139,7 @@ console.log( arr.indexOf('bar') ); // prints: 1
 
 ## 11. Front End Performance Tip for string concatenation
  ```javascript
-var stuckTogether = ["value1", "value2", "value3"].join("");
+var stuckTogether = ["value1", "value2", "value3"].join(""); // Deprecated: use concat instead (see #34)
  ```
 
 ## 12. Module Pattern (public and private members within a namespace)
