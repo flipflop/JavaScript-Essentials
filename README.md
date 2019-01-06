@@ -350,10 +350,29 @@ prints:
 
 ## 25. Add in Memoization example
 
-[Reference:]( http://unscriptable.com/2009/05/01/a-better-javascript-memoizer/ )
+ ```javascript
+const memoizeFn = fn => {
+  let prevResult
+  let prevArg
+  return arg => {
+    if (prevArg === arg) {
+      return prevResult
+    }
+    const result = fn(arg)
+    prevArg = arg
+    prevResult = result
+    return result
+  }
+}
 
-[Reference:]( http://philogb.github.io/blog/2008/09/05/memoization-in-javascript/ )
- 
+const calculateResult = a => a * 2
+
+const memoizedFn = memoizeFn(calculateResult)
+memoizedFn(1) // calls "calculateResult"
+memoizedFn(1) // returns cached arg
+memoizedFn(1) // returns cached arg
+memoizedFn(2) // calls "calculateResult"
+ ``` 
 
 ## 26. Inheritance
 
