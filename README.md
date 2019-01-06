@@ -348,7 +348,7 @@ prints:
 */
  ```
 
-## 25. Add in Memoization example
+## 25. Memoization
 
  ```javascript
 const memoizeFn = fn => {
