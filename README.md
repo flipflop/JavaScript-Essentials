@@ -582,7 +582,22 @@ function reverse(s) {
 "foo"[2]
 // returns "o"
  ```
- 
+
+## 40. Get an object by label in JSON
+```
+var arr=[
+    {"time":"2016-07-26 09:02:27","type":"aa"},
+    {"time":"2016-04-21 20:35:07","type":"ae"},
+    {"time":"2016-08-20 03:31:57","type":"ar"},
+    {"time":"2017-01-19 22:58:06","type":"ae"},
+    {"time":"2016-08-28 10:19:27","type":"ae"},
+    {"time":"2016-12-06 10:36:22","type":"ar"},
+    {"time":"2016-07-09 12:14:03","type":"ar"}
+];
+
+var filtered = arr.filter(item=>item.type=="ar");
+console.log(filtered);
+```
  
  
 
