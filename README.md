@@ -598,6 +598,14 @@ var arr=[
 var filtered = arr.filter(item=>item.type=="ar");
 console.log(filtered);
 ```
- 
+
+## 41 Get first item from an array
+```
+// ok (iterate over all and return a new array)
+const user = users.filter(u => u.id === id)[0];
+
+// better (find first one and stop)
+const user = users.find(u => u.id === id);
+```
  
 
