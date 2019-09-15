@@ -607,5 +607,25 @@ const user = users.filter(u => u.id === id)[0];
 // better (find first one and stop)
 const user = users.find(u => u.id === id);
 ```
+
+## 42 Nested Destructuring
+```
+const response = {
+    status: 200,
+    data: {
+        user: {
+            name: 'rozario chivers',
+            description: ''
+        },
+        account: {},
+        tag: '#tag'
+    }
+};
+
+const {data: {user}} = response;
+
+console.log('user ', user);
+// {name: "rozario chivers", description: ""}
+```
  
 
