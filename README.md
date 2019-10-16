@@ -628,4 +628,11 @@ console.log('user ', user);
 // {name: "rozario chivers", description: ""}
 ```
  
+## 43 ES6 Remove Duplicates in an Array
+```
+const arrayDuplicates = [1,2,2,2,3,3,5,5,1,1];
+const uniqueArray = [... new Set(Array)];
+
+// uniqueArray -> [1,2,3,5];
+```
 
