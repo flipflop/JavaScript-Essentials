@@ -636,3 +636,20 @@ const uniqueArray = [... new Set(Array)];
 // uniqueArray -> [1,2,3,5];
 ```
 
+## 44 Multi-line function template string
+```
+// example 1
+let myString = (() => {/*
+    <div id="someId">
+        some content<br />
+        <a href="#someRef">someRefTxt</a>
+    </div>        
+*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1]
+
+// example 2
+let tennysonQuote = (() => {/*
+  Theirs not to make reply,
+  Theirs not to reason why,
+  Theirs but to do and die
+*/}).toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '')
+```
