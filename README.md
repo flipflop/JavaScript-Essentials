@@ -653,3 +653,11 @@ let tennysonQuote = (() => {/*
   Theirs but to do and die
 */}).toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '')
 ```
+## 45 JavaScript Base64 runtime payload using ES6 template literals
+
+```
+Function`$${atob`YWxlcnQoMSk=`}```
+```
+
+
+
